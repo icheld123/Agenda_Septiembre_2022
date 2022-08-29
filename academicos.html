@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Egresados</title>
+    <link rel="icon" href="img/knowledge_graduation_cap_books_icon_182965.png">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="normalize_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vermas.js"></script>
+  </head>
+<body>
+  <div class="nav"><nav></nav></div>
+  <div id="contenedor">
+      <div id="main">
+          <h3>Estos son los eventos académicos del mes de Septiembre.</h3>
+          <div id="paginacion">
+              <a href="#" class="button" id="prev">Anterior</a>
+              <a href="#" class="button" id="next">Siguiente</a>
+          </div>
+          <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
+          <div class="pagination" id="contenedor-anuncios">
+              <div class="post" id="page1">
+                <div id="anuncio">
+                  <div id="contenido-anuncio">
+                      <p>Lanzamiento: 2do Congreso Internacional de Psicología: Interdisciplinariedad y transdisciplinariedad en la praxis psicosocial.</p>
+                      <p class="fecha">Fecha: 01 de Septiembre de 2022</p>
+                      <p class="fecha">Hora: 05:00 pm</p>
+                      <div id="botones-evento">
+                          <div id="via-evento">
+                            <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img
+                              src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              <div id="anuncio">
+                <div id="contenido-anuncio">
+                    <p>Registratón de propiedad intelectual unadista</p>
+                    <p class="fecha">Fecha: 16 de Septiembre de 2022</p>
+                    <p class="fecha">Hora: 06:00 pm</p>
+                    <div id="botones-evento">
+                      <a href="https://eventos.unad.edu.co/registraton-de-propiedad-intelectual-unadista/registraton-de-propiedad-intelectual-unadista/individual-registration"
+                      target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
+                        <div id="via-evento">
+                          <a href="https://unad-edu-co.zoom.us/j/92628875979?pwd=aDNaTnRBRVdxZ3AremNEdENVTGlldz09" id="" target="_blank"><img
+                              src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div id="anuncio">
+                <div id="contenido-anuncio">
+                    <p>EXPOTECH 2022</p>
+                    <p class="fecha">Fecha: 27 al 29 de Septiembre de 2022</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+              <div class="post" id="page2">
+              </div>
+            </div>
+            <div class="pagination" id="contenedor-anuncios">
+              <div class="post" id="page3">
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <footer class="footer"></footer>
+  <script  src="js/script.js"></script>
+  <script type="text/javascript">
+    $(function () {
+        $(".nav").load("navbar.html");
+    });
+    $(function () {
+        $(".footer").load("footer.html");
+    });
+  </script>
+</body>
+</html>
+
