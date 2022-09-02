@@ -17,6 +17,30 @@
   <div id="contenedor">
       <div id="main">
           <h3>Estos son los eventos académicos del mes de Septiembre.</h3>
+          <style>@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+            @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+            h1,
+            h2,
+            h3,
+            h4 {
+              color: #2d314d;
+              font-weight: 500;
+              text-align: center;
+              font-family: "Roboto",sans-serif;
+            }
+            .box > .icon { text-align: center; position: relative; }
+            .box > .icon > .info { margin-top: 51px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; border-radius: 10px; padding: 15px 0 10px 0; }
+            .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+            .box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; font-weight: 500; line-height: 20px; padding: 0.5em;}
+            .box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 1.5em; margin: 20px;}
+            .box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none;background-color: #F0B429;padding: 0.5em;border-radius: 10px;}
+            .box > .icon:hover > .info > .more > a { background-color: #f04e09;color: #e0e0e0;}
+            .box .space { height: 30px; }
+            .via-evento a img{width: 3em;display: inline-block;margin-top: 1em;}
+            .hora{color: #F47920!important;font-weight: 700;} 
+            .fecha{font-weight: 700;color: #005883!important;} 
+            .anuncio {width: 80%;margin: auto;}
+          </style>
           <div id="paginacion">
               <a href="#" class="button" id="prev">Anterior</a>
               <a href="#" class="button" id="next">Siguiente</a>
@@ -24,48 +48,49 @@
           <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
           <div class="pagination" id="contenedor-anuncios">
               <div class="post" id="page1">
-                <div id="anuncio">
-                  <div id="contenido-anuncio">
-                      <p>Lanzamiento: 2do Congreso Internacional de Psicología: Interdisciplinariedad y transdisciplinariedad en la praxis psicosocial.</p>
-                      <p class="fecha">Fecha: 01 de Septiembre de 2022</p>
-                      <p class="fecha">Hora: 05:00 pm</p>
-                      <div id="botones-evento">
-                          <div id="via-evento">
-                            <a href="https://www.youtube.com/user/universidadunad" id="" target="_blank"><img
-                              src="img/youtube.png" alt="Evento via youtube" class="thumbnails" /></a>
+                <div class="anuncio">
+                  <div class="box">							
+                      <div class="icon">
+                          <div class="info">
+                              <h3 class="title">Lanzamiento: 2do Congreso Internacional de Psicología: Interdisciplinariedad y transdisciplinariedad en la praxis psicosocial.</h3>
+                              <p class="fecha">Fecha: 01 de Septiembre de 2022</p>
+                              <p class="hora">Hora: 05:00 pm</p>
+                              <div class="via-evento"><a href="https://www.youtube.com/user/universidadunad"><img src="img/youtube.png" alt=""></a></div>
+                              <br>
                           </div>
                       </div>
-                  </div>
+                      <div class="space"></div>
+                  </div> 
                 </div>
-              <div id="anuncio">
-                <div id="contenido-anuncio">
-                    <p>Registratón de propiedad intelectual unadista</p>
-                    <p class="fecha">Fecha: 16 de Septiembre de 2022</p>
-                    <p class="fecha">Hora: 06:00 pm</p>
-                    <div id="botones-evento">
-                      <a href="https://eventos.unad.edu.co/registraton-de-propiedad-intelectual-unadista/registraton-de-propiedad-intelectual-unadista/individual-registration"
-                      target="_blank" id="botones" class="boton boton-amarillo d-block">Inscribirse</a>
-                        <div id="via-evento">
-                          <a href="https://unad-edu-co.zoom.us/j/92628875979?pwd=aDNaTnRBRVdxZ3AremNEdENVTGlldz09" id="" target="_blank"><img
-                              src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                        </div>
-                    </div>
+                <div class="anuncio">
+                  <div class="box">							
+                      <div class="icon">
+                          <div class="info">
+                              <h3 class="title">Registratón de propiedad intelectual unadista</h3>
+                              <p class="fecha">Fecha: 16 de Septiembre de 2022</p>
+                              <p class="hora">Hora: 06:00 pm</p>
+                              <div class="more">
+                                <a href="https://eventos.unad.edu.co/registraton-de-propiedad-intelectual-unadista/registraton-de-propiedad-intelectual-unadista/individual-registration" title="Title Link" target="_blank">Inscribirse</a>
+                              </div>
+                              <div class="via-evento"><a href="https://unad-edu-co.zoom.us/j/92628875979?pwd=aDNaTnRBRVdxZ3AremNEdENVTGlldz09"><img src="img/zoom.png" alt=""></a></div>
+                              <br>
+                          </div>
+                      </div>
+                      <div class="space"></div>
+                  </div> 
                 </div>
-              </div>
-              <div id="anuncio">
-                <div id="contenido-anuncio">
-                    <p>EXPOTECH 2022</p>
-                    <p class="fecha">Fecha: 27 al 29 de Septiembre de 2022</p>
+                <div class="anuncio">
+                  <div class="box">							
+                      <div class="icon">
+                          <div class="info">
+                              <h3 class="title">EXPOTECH 2022</h3>
+                              <p class="fecha">Fecha: 27 al 29 de Septiembre de 2022</p>
+                              <br>
+                          </div>
+                      </div>
+                      <div class="space"></div>
+                  </div> 
                 </div>
-              </div>
-            </div>
-            </div>
-            <div class="pagination" id="contenedor-anuncios">
-              <div class="post" id="page2">
-              </div>
-            </div>
-            <div class="pagination" id="contenedor-anuncios">
-              <div class="post" id="page3">
               </div>
             </div>
           </div>
