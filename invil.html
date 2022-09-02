@@ -21,218 +21,301 @@
     <div id="contenedor">
         <div id="main">
             <h3>Estos son los talleres del INVIL del mes de Septiembre.</h3>
-            <div id="paginacion">
-                <a href="#" class="button" id="prev">Anterior</a>
-                <a href="#" class="button" id="next">Siguiente</a>
-            </div>
-            <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
-            <div class="pagination" id="contenedor-anuncios">
-                <div class="post" id="page1">
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>Francés Avanzado: Les verbes lire et écrire au présent. L’habitude et la fréquence</p>
-                            <p class="fecha">Fecha: 01 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Yecid Morinelly</p>
-                            
-                        </div>
-                    </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>KIDS Workshop: Summer time activities</p>
-                            <p class="fecha">Fecha: 02 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Laura Cristina Valencia Patiño</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>English Lab: Reading skills (high voice reading, lyrics, scanning)</p>
-                            <p class="fecha">Fecha: 04 de agosto de 2022</p>
-                            <p class="fecha">Hora: 06:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Rafael Morales</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJItd-CgqzwvHtCYROzR9LRdMmfzv-jblUNV" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <style>@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+                @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+                h1,
+                h2,
+                h3,
+                h4 {
+                  color: #2d314d;
+                  font-weight: 500;
+                  text-align: center;
+                  font-family: "Roboto",sans-serif;
+                }
+                .box > .icon { text-align: center; position: relative; }
+                .box > .icon > .info { margin-top: 51px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; border-radius: 10px; padding: 15px 0 10px 0; }
+                .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+                .box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; font-weight: 500; line-height: 20px; padding: 0.5em;}
+                .box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 1.5em; margin: 20px;}
+                .box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 1em; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none;background-color: #F0B429;padding: 0.5em;border-radius: 10px;}
+                .box > .icon:hover > .info > .more > a { background-color: #f04e09;color: #e0e0e0;}
+                .box .space { height: 30px; }
+                .via-evento a img{width: 3em;display: inline-block;margin-top: 1em;}
+                .hora{color: #F47920!important;font-weight: 700;} 
+                .fecha{font-weight: 700;color: #005883!important;} 
+                .anuncio {width: 80%;margin: auto;}
+            </style>
+            <body>
+            <div class="container">
+                <div id="paginacion">
+                    <a href="#" class="button" id="prev">Anterior</a>
+                    <a href="#" class="button" id="next">Siguiente</a>
                 </div>
-            </div>
-            <div class="pagination" id="contenedor-anuncios">
-                <div class="post" id="page2">
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>KIDS Workshop: How to make necklaces and bracelets</p>
-                            <p class="fecha">Fecha: 09 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Natalia Vallejo</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                <h4 style="width: 80%; margin: auto;">¡Para ingresar al evento, sólo debes dar clic en el ícono de la página bajo cada evento!</h4>
+                <div class="pagination"  id="contenedor-anuncios">
+                    <div class="post" id="page1" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">English Lab: How can I record my voice?</h3>
+                                        <p class="fecha">Fecha: 01 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Rafael Morales</p>
+                                        <br>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>   
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Francés Básico: Comment dois-je me présenter en français?</h3>
+                                        <p class="fecha">Fecha: 02 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Samir Layseka</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvcu-tqzsrE9cvSmxanydHmLv4aO7D0BBU" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Francés Avanzado: La Santé</h3>
+                                        <p class="fecha">Fecha: 05 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Diana Lorena Cuevas</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvce-sqTMsEtfK1OcOzDUWjD9_1DEtxWKT" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
                         </div>
                     </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>English Workshop: Pronouns</p>
-                            <p class="fecha">Fecha: 09 de agosto de 2022</p>
-                            <p class="fecha">Hora: 06:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Liliana Lozano</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJcuf-murjMvHdMoXJGEHsRG2mTtMRL3HvYD" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                    <div class="post" id="page2" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">KIDS Workshop: Funny recipes</h3>
+                                        <p class="fecha">Fecha: 06 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Alcides Hoyos</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>   
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">English Workshop: Opinions and ideas about future</h3>
+                                        <p class="fecha">Fecha: 06 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Leonor Vargas</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJcuf-murjMvHdMoXJGEHsRG2mTtMRL3HvYD" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">KIDS Workshop: Travel guide</h3>
+                                        <p class="fecha">Fecha: 13 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Letty Contreras</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
                         </div>
                     </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>Taller de Español para Extranjeros</p>
-                            <p class="fecha">Fecha: 10 de agosto de 2022</p>
-                            <p class="fecha">Hora: 06:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Carolina Rojas</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJcod-muqDktEtfgCY7nSRjkvCDNZvBOJL4O" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                    <div class="post" id="page3" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Taller de Español para Extranjeros</h3>
+                                        <p class="fecha">Fecha: 14 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Carolina Rojas</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJcod-muqDktEtfgCY7nSRjkvCDNZvBOJL4O" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>   
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">English Lab: Different people, different routines</h3>
+                                        <p class="fecha">Fecha: 15 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Brian Mateus</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJItd-CgqzwvHtCYROzR9LRdMmfzv-jblUNV" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Francés Básico: La ville, le climat et les habitants</h3>
+                                        <p class="fecha">Fecha: 16 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Andrés Colon</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvcu-tqzsrE9cvSmxanydHmLv4aO7D0BBU" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="pagination" id="contenedor-anuncios">
-                <div class="post" id="page3">
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>"Francés Básico: "Quelques articulateurs de temps Différentes façons de dire l’heure"</p>
-                            <p class="fecha">Fecha: 12 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Ana Milena Morales</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvcu-tqzsrE9cvSmxanydHmLv4aO7D0BBU" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                    <div class="post" id="page4" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Francés Avanzado: Affiche de mon état de santé</h3>
+                                        <p class="fecha">Fecha: 19 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Sandra Viviana Pinzon</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvce-sqTMsEtfK1OcOzDUWjD9_1DEtxWKT" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>   
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">KIDS Workshop: Let's analyze fables</h3>
+                                        <p class="fecha">Fecha: 20 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Tatiana Minda</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">English Workshop: Modals</h3>
+                                        <p class="fecha">Fecha: 20 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Leonor Vargas</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJcuf-murjMvHdMoXJGEHsRG2mTtMRL3HvYD" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
                         </div>
                     </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>KIDS Workshop: Funny recipes</p>
-                            <p class="fecha">Fecha: 16 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: William Mauricio Lopez</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                    <div class="post" id="page5" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">KIDS Workshop: Tips for traveling</h3>
+                                        <p class="fecha">Fecha: 27 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Martha Santos</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>   
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Taller de Español para Extranjeros</h3>
+                                        <p class="fecha">Fecha: 28 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Carolina Rojas</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJcod-muqDktEtfgCY7nSRjkvCDNZvBOJL4O" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
+                        </div>
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">English Lab: Become a writer</h3>
+                                        <p class="fecha">Fecha: 29 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: John Jairo Quintero</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJItd-CgqzwvHtCYROzR9LRdMmfzv-jblUNV" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div> 
                         </div>
                     </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>English Lab: Space race</p>
-                            <p class="fecha">Fecha: 18 de agosto de 2022</p>
-                            <p class="fecha">Hora: 06:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Leonardo Leguizamon</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJItd-CgqzwvHtCYROzR9LRdMmfzv-jblUNV" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
+                    <div class="post" id="page6" >
+                        <div class="anuncio">
+                            <div class="box">							
+                                <div class="icon">
+                                    <div class="info">
+                                        <h3 class="title">Francés Básico: Pièces d'une maison</h3>
+                                        <p class="fecha">Fecha: 30 de Septiembre de 2022</p>
+                                        <p class="hora">Nombre del Tutor: Deibi Milena Aguirre</p>
+                                        <div class="more">
+                                            <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvcu-tqzsrE9cvSmxanydHmLv4aO7D0BBU" title="Title Link" target="_blank">Inscribirse</a>
+                                        </div>
+                                        <br>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination" id="contenedor-anuncios">
-                <div class="post" id="page4">
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>Francés Avanzado: Le presentatif "c'est - il est"</p>
-                            <p class="fecha">Fecha: 22 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Claudia Duque Henao</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJUvce-sqTMsEtfK1OcOzDUWjD9_1DEtxWKT" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>KIDS Workshop: Air fest (Kites, balloons, ringlets, paper planes)</p>
-                            <p class="fecha">Fecha: 23 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Cristina Otálora</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>English Workshop: The future in English (grammar, rules, auxiliars)</p>
-                            <p class="fecha">Fecha: 23 de agosto de 2022</p>
-                            <p class="fecha">Hora: 06:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Milton Andres Rosero</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJcuf-murjMvHdMoXJGEHsRG2mTtMRL3HvYD" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination" id="contenedor-anuncios">
-                <div class="post" id="page5">
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>Taller de Portugués.</p>
-                            <p class="fecha">Fecha: 24 de agosto de 2022</p>
-                            <p class="fecha">Hora: 06:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: </p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="#" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div id="anuncio">
-                        <div id="contenido-anuncio">
-                            <p>KIDS Workshop: Discovering Egypt</p>
-                            <p class="fecha">Fecha: 30 de agosto de 2022</p>
-                            <p class="fecha">Hora: 04:00 p.m</p>
-                            <p class="fecha">Nombre del Tutor: Ana Milena Morales</p>
-                            <div id="botones-evento">
-                                <div id="via-evento">
-                                    <a href="https://unad-edu-co.zoom.us/meeting/register/tJctf-mhqzgrGtOWgYgeRFEASGa-ovdrD7Y6" id="" target="_blank"><img
-                                        src="img/zoom.png" alt="Evento via zoom" class="thumbnails" /></a>
-                                </div>
-                              </div>
+                                <div class="space"></div>
+                            </div> 
                         </div>
                     </div>
                 </div>
